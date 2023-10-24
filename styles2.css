@@ -1,0 +1,130 @@
+body {
+    background-color: #221a0f;
+    font-family: 'Oswald', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.center {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card {
+    height: 18em;
+    width: 14em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+.property-image {
+    height: 6em;
+    width: 14em;
+    padding: 1em 2em;
+    position: Absolute;
+    top: 0px;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    background-image: url("images/pexels-pixabay-45246.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.property-description {
+    font-size: 1em;
+    background-color: #41321f;
+    color: white;
+    height: 12em;
+    width: 14em;
+    position: absolute;
+    bottom: 0em;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+/* Social Icons */
+
+.property-social-icons {
+    color: white;
+    width: 1em;
+    height: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover {
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.521);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.521);
+}
+
+.property-card:hover .property-description {
+    height: 0em;
+    padding: 0px 1em;
+}
+
+.property-card:hover .property-image {
+    height: 18em;
+}
+
+.property-card:hover .property-social-icons {
+    color: black;
+}
