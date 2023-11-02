@@ -1,29 +1,11 @@
-
-body {
-    background-color: #221a0f;
-    font-family: 'Oswald', sans-serif;
-}
-
-.header{
-    font-family: 'Skranji', cursive;
-    padding: 5px;
-    text-align: left;
-    background-color: #41321f;
-    color: rgb(247, 140, 44);
-    font-size: 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-
-.footer {
-    background-color: #41321f; 
-    color: #fff; 
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    bottom: 0;
+.grid-layout {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    width: 98%;
+    height: 100%;
 }
 /*---------------------------*/
 
@@ -36,27 +18,31 @@ h5 {
     font-size: 1.4em;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
-    color: white;
+    color: rgb(238, 220, 196);
     transition: all 0.8s;
 }
 
 p {
-    font-size: 13px;
+    color: rgb(238, 220, 196);
     font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
-.center {
+/* .center {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .card {
-    height: 18em;
-    width: 14em;
+    height: 374px;
+    /*18em*/
+    /*288px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
     display: flex;
     flex-direction: column;
     position: relative;
@@ -66,11 +52,19 @@ p {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
 }
 
-
-.image {
-    height: 10em;
-    width: 14em;
-    padding: 1em 2em;
+/* --------------------------------------------------------------------------------------------- */
+.image-rep {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
     position: Absolute;
     top: 0px;
     transition: all 0.8s;
@@ -79,32 +73,237 @@ p {
     background-repeat: no-repeat;
 }
 
+.image-mam {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/pexels-pixabay-162340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-bird {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/a62fb56a-43e3-40da-b088-40152dd8594c.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-amph {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/frog-69813_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-fish {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/fish-6368233_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(0);
+}
+
+.image-ins {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/pexels-pixabay-33043.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-arac {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/pexels-skyler-ewing-4808823.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-moll {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/pexels-pia-b-3046629.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-cnida {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/pexels-brian-collier-18845826.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-crust {
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*14em*/
+    /*224px*/
+    padding: 20px 42px;
+    /*1em*/
+    /*2em*/
+    /*16px*/
+    /*32px*/
+    position: Absolute;
+    top: 0px;
+    transition: all 0.8s;
+    background-image: url("../images/crab-1990198_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
 .image-title {
-    height: 1em;
+    font-family: 'Oswald', sans-serif;
+    height: 20px;
+    /*1em*/
+    /*16px*/
 }
 
 .description {
-    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    /*1em*/
+    /*16px*/
     background-color: #41321f;
-    color: white;
-    height: 10em;
-    width: 14em;
+    color: rgb(238, 220, 196);
+    height: 208px;
+    /*10em*/
+    /*160px*/
+    width: 291px;
+    /*18em*/
+    /*224px*/
     position: absolute;
-    bottom: 0em;
+    bottom: 0px;
     transition: all 0.8s;
-    padding: 0.5em 1em;
+    padding: 8px 16px;
+    /*0.5em*/
+    /*1em*/
+    /*8px*/
+    /*16px*/
     text-align: center;
 }
 
 .icons {
-    color: white;
-    width: 1em;
-    height: 1em;
+    color: rgb(238, 220, 196);
+    width: 16px;
+    /*1em*/
+    /*16px*/
+    height: 16px;
+    /*1em*/
+    /*16px*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: absolute;
-    bottom: 1em;
-    left: 1em;
+    bottom: 16px;
+    /*1em*/
+    /*16px*/
+    left: 16px;
+    /*1em*/
+    /*16px*/
     transition: all 0.8s;
 }
 
@@ -121,19 +320,74 @@ p {
 }
 
 .card:hover .description {
-    height: 0em;
-    padding: 0px 1em;
+    height: 0px;
+    /*0em*/
+    /*0px*/
+    padding: 0px 16px;
+    /*0px*/
+    /*1em*/
+    /*0px*/
+    /*16px*/
 }
 
-.card:hover .image {
-    height: 18em;
+.card:hover .image-rep {
+    height: 374px;
+    /*18em*/
+    /*288px*/
 }
+.card:hover .image-mam {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-bird {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-amph {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-fish {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-ins {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-arac {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-moll {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-cnida {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+.card:hover .image-crust {
+    height: 374px;
+    /*18em*/
+    /*288px*/
+}
+
 
 .card:hover .icons {
     color: black;
 }
 
 .card:hover h5 {
-    font-size: 2em;
+    font-size: 32px;
+    /*2em*/
+    /*32px*/
 }
-
