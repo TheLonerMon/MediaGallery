@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/background.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/modnorm.min.css">
+  <script src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -23,227 +24,266 @@
     <font size="-1">The</font>
     <font size="+4">Den</font>
   </header>
-  <div class="grid-layout">
-      <div class="card">
-        <a href="#">
-          <div class="image-rep">
-            <div class="image-title">
-              <h5>Reptile</h5>
-            </div>
+
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/red-panda-sleeps-rest-cute-preview.jpg" style="width: 100%; height: 500px; object-fit: cover;" >
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/axolotl_WWsummer2021.jpg" style="width: 100%; height: 500px; object-fit: cover; object-position: 0 20%;">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/beluga_1.webp" style="width: 100%; height: 500px; object-fit: cover;">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+<!-- The dots/circles -->
+
+
+  <div class="flex-layout">
+    <!-- <div class="grid-layout"> -->
+    <div class="card">
+      <a href="#">
+        <div class="image-rep">
+          <div class="image-title">
+            <h5>Reptile</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-mam">
-            <div class="image-title">
-              <h5>Mammal</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-mam">
+          <div class="image-title">
+            <h5>Mammal</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-bird">
-            <div class="image-title">
-              <h5>Bird</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-bird">
+          <div class="image-title">
+            <h5>Bird</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-amph">
-            <div class="image-title">
-              <h5>Amphibian</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-amph">
+          <div class="image-title">
+            <h5>Amphibian</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-fish">
-            <div class="image-title">
-              <h5>Fish</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-fish">
+          <div class="image-title">
+            <h5>Fish</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-ins">
-            <div class="image-title">
-              <h5>Insect</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-ins">
+          <div class="image-title">
+            <h5>Insect</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-arac">
-            <div class="image-title">
-              <h5>Arachnid</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-arac">
+          <div class="image-title">
+            <h5>Arachnid</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-moll">
-            <div class="image-title">
-              <h5>Mollusk</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-moll">
+          <div class="image-title">
+            <h5>Mollusk</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-cnida">
-            <div class="image-title">
-              <h5>Cnidarian</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-cnida">
+          <div class="image-title">
+            <h5>Cnidarian</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
-      <div class="card">
-        <a href="#">
-          <div class="image-crust">
-            <div class="image-title">
-              <h5>Crustaceans</h5>
-            </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <a href="#">
+        <div class="image-crust">
+          <div class="image-title">
+            <h5>Crustaceans</h5>
           </div>
-        </a>
-        <div class="description">
-          <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-            They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
-          </p>
         </div>
-        <div class="icons">
-          <span class="material-symbols-outlined">
-            play_arrow
-          </span>
-          <span class="material-symbols-outlined">
-            expand_content
-          </span>
-        </div>
+      </a>
+      <div class="description">
+        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
+          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        </p>
       </div>
+      <div class="icons">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+        <span class="material-symbols-outlined">
+          expand_content
+        </span>
+      </div>
+    </div>
+    <!-- </div> -->
   </div>
   <footer class="footer">
     <p>&copy; The Den </p>
